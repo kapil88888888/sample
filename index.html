@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+<header class="box-shadow">
+    <nav class="navbar navbar-expand-md bg-gray">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<section class="custome-top" style="background-image: url(./imgs/banner1.png);">
+ 
+      <div class="inner-banner w-100">
+        <div class="container">
+          <h1 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">This is Heading field</h1>
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+         <button class="btn-5 custom-btn mt-4" data-aos="zoom-out-left" >Button 5</button>
+        </div>
+  </div>
+</section>
+<section class="bg-gray  p_100">
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-4">
+                <div class="card" data-aos="zoom-in"  data-aos-duration="1000">
+                    <div class="picture">
+                        <img src="imgs/rent-hotel1.jpg" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="card-details p_15">
+                        <h2>Product Name</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-aos="zoom-in" data-aos-duration="1500" >
+                    <div class="picture">
+                        <img src="imgs/rent-hotel1.jpg" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="card-details p_15">
+                        <h2>Product Name</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card "  data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="picture">
+                        <img src="imgs/rent-hotel1.jpg" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="card-details p_15">
+                        <h2>Product Name</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 80){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+<script>
+    AOS.init({
+      offset: 0,
+      duration: 1000,
+      once: false,
+    });
+  </script>
+  <script>
+      $(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+  </script>
+</body>
+</html>
